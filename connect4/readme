@@ -1,2 +1,34 @@
-This is a simple game where the plyer wins if the player connect 4 dots.
-The two players take chances and play
+### Summary
+
+This code is a simple implementation of the Connect Four game using JavaScript, jQuery, and HTML. The game is designed to be played in a web browser, where two players take turns dropping colored chips into a grid. The goal is to get four of their own colored chips in a row either horizontally, vertically, or diagonally.
+
+#### Key Components
+
+1. **Player Setup**:
+   - Prompts each player for their name and assigns them a color (blue for player one and red for player two).
+
+2. **Game Variables**:
+   - `game_on`: A flag to control the game state.
+   - `table`: A jQuery selector for the table rows in the game grid.
+
+3. **Functions**:
+   - **`reportWin`**: Logs the winning coordinates to the console.
+   - **`changeColor`**: Changes the color of a button at a specified row and column.
+   - **`returnColor`**: Returns the current color of a button at a specified row and column.
+   - **`checkBottom`**: Finds the lowest available row in a column to drop a chip.
+   - **`colorMatchCheck`**: Checks if four given colors are the same (not gray or undefined).
+   - **`horizontalWinCheck`**: Checks for horizontal wins in the grid.
+   - **`verticalWinCheck`**: Checks for vertical wins in the grid.
+   - **`diagonalWinCheck`**: Checks for diagonal wins in the grid.
+   - **`gameEnd`**: Ends the game and displays the winning player's name.
+
+4. **Game Flow**:
+   - Starts with player one.
+   - Player selects a column to drop their chip.
+   - The chip is placed in the lowest available row in that column.
+   - Checks for any winning combinations (horizontal, vertical, or diagonal).
+   - Switches to the other player if no win is detected.
+   - Ends the game and announces the winner if a winning combination is found.
+
+
+
