@@ -1,0 +1,30 @@
+### Summary
+
+This code is a simple terminal-based slot machine game written in JavaScript using Node.js. Below are the key components and their functions:
+
+1. **Dependencies**:
+   - `prompt-sync`: Used for synchronous user input.
+
+2. **Constants**:
+   - `ROWS` and `COLS`: Dimensions of the slot machine (3x3 grid).
+   - `SYMBOLS_COUNT` and `SYMBOLS_VALUE`: Define the frequency and payout value of each symbol.
+
+3. **Functions**:
+   - **`getdeposit`**: Prompts the user to deposit money, ensuring the input is valid.
+   - **`getumberOfLines`**: Prompts the user to choose the number of lines to bet on (1-3).
+   - **`getBetamout`**: Prompts the user to place a bet per line, ensuring it is within the balance.
+   - **`spin`**: Simulates the slot machine reels and returns the result.
+   - **`transpose`**: Transposes the reels for easier line checking.
+   - **`printTrans`**: Prints the transposed reels.
+   - **`checkWin`**: Checks for winning lines and calculates winnings.
+   - **`game`**: Main game loop handling user inputs, spins, balance updates, and continuation.
+
+4. **Game Flow**:
+   - User deposits money.
+   - User selects the number of lines to bet on.
+   - User places a bet amount per line.
+   - Slot machine spins and results are displayed.
+   - Winnings are calculated and balance is updated.
+   - User decides whether to play again or not.
+
+This will start the slot machine game in your terminal. Enjoy playing!
