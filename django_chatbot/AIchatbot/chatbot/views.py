@@ -12,7 +12,7 @@ import openai
 # Create your views here.
 
 
-openai_api_key="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"
+openai_api_key="key"
 openai.api_key = openai_api_key
 
 def ask_ai(message):
